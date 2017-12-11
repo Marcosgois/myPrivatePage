@@ -9,6 +9,7 @@ Inicialmente utilizando o HEROKU como banco de dados
 ### Prerequisites to acess
 
 * Have internet
+* Have a browser installed
 
 ```
 Open index.html in your browser [Unpublished page].
