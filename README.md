@@ -1,18 +1,14 @@
 # Personal WebSite Page
 
-Remake de famous game, Game of Life, using Scala by default, use LIBGDX to create a Graphical User Interface (GUI) within use depence injection using Spring Framework.
+Criando um site pessoal para praticar habilidade em HTML5, CSS3 e javascript.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Inicialmente utilizando o HEROKU como banco de dados
 
-### Prerequisites
+### Prerequisites to acess
 
-* Java installed
-* Clone this [repository](https://github.com/Marcosgois/GameOfLife_GUI-ID-GAME)
-
-TODO: LIBGDX
-TODO: ALL Game logics
+* Have internet
 
 ```
 run .jar in /run/artifacts/libgdx_game_jar/libgdx_game.jar
