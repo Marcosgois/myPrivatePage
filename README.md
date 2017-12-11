@@ -1,4 +1,4 @@
-# GameOfLife using Scala
+# Personal WebSite Page
 
 Remake de famous game, Game of Life, using Scala by default, use LIBGDX to create a Graphical User Interface (GUI) within use depence injection using Spring Framework.
 
