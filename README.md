@@ -11,7 +11,7 @@ Inicialmente utilizando o HEROKU como banco de dados
 * Have internet
 
 ```
-run .jar in /run/artifacts/libgdx_game_jar/libgdx_game.jar
+Open index.html in your browser [Unpublished page].
 ```
 <!---
 ### Installing
