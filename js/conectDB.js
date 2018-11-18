@@ -4,8 +4,8 @@ var Ator
 var con = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "",
-  database: "projeto_hollywood",
+  password: "password",
+  database: "hollywood",
   port: 3306
 });
 
@@ -23,12 +23,13 @@ con.query("SELECT nomeAtor, idAtor FROM Ator", function (err, result, fields) {
     });
 });
 
-con.query("SELECT nomePais FROM Pais", function (err, result, fields) {
+con.query("SELECT nomePais, idPais FROM Pais", function (err, result, fields) {
   if (err) throw err;
   //console.log(result);
   Object.keys(result).forEach(function(key) {
       var pais = result[key];
       console.log(pais.nomePais)
+      console.log(pais.idPais)
     });
 });
 con.end();
