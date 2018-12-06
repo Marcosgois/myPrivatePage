@@ -34,7 +34,15 @@
 						</tr>
 					</thead>
 					<tbody id="tabela-pacientes">
-						
+							<?php
+							while ($row = mysql_fetch_array($query)) {
+								echo "<tr>";
+								echo "<td>".$row[idUsuario]."</td>";
+								echo "<td>".$row[nomeUsuario]."</td>";
+								echo "<td>".$row[loginUsuario]."</td>";
+								echo "</tr>";
+							}
+						 ?>
 					</tbody>
 				</table>
 				<button id="buscar-pacientes" class="botao bto-principal">Buscar</button>
