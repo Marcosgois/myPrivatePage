@@ -8,7 +8,12 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 	</head>
 	<body>
-
+		<?php
+            $server = mysql_connect("localhost","root", "password");
+            $db =  mysql_select_db("site",$server);
+			$query = mysql_query("select * from Usuarios");
+			echo "<script>console.log( 'Debug Objects: " . $query . "' );</script>";
+        ?>
 		<header>
 			<div class="container">
 				<h1 class="titulo"></h1>
@@ -39,10 +44,12 @@
 	<ul id="mensagens-erro">
 	</ul>
     <form id="form-adiciona">
-        <div class="">
-            <label for="nome">Nome:</label>
-            <input id="nome" name="nome" type="text" placeholder="Nome" class="campo">
-        </div>
+        <div class="input-group mb-3">
+			<div class="input-group-prepend">
+			  <span class="input-group-text" id="basic-addon1">Nome</span>
+			</div>
+			<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+		  </div>
         <div class="grupo">
             <label for="peso">Peso:</label>
             <input id="peso" name="peso" type="text" placeholder="Peso" class="campo campo-medio">
